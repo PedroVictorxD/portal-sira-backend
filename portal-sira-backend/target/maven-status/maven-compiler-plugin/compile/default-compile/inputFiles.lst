@@ -1,6 +1,7 @@
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/service/UsuarioService.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/service/ChamadoService.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/service/OcorrenciaService.java
+/home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/service/ComentarioOcorrenciaService.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/controller/ChamadoController.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/repository/OcorrenciaRepository.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/repository/UsuarioRepository.java
@@ -9,7 +10,10 @@
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/model/Usuario.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/model/Chamado.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/controller/LogoutController.java
+/home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/repository/ComentarioOcorrenciaRepository.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/controller/FTPController.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/model/Ocorrencia.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/controller/ForumController.java
+/home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/controller/RootController.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/repository/ChamadoRepository.java
+/home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/model/ComentarioOcorrencia.java

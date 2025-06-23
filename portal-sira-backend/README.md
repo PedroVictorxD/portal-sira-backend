@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# portal-sira
+=======
 # Portal Sira Backend
 
 Projeto backend em Java 7 (Spring MVC) para o sistema de Passagem de Serviço Sira CPD.
@@ -36,3 +39,4 @@ portal-sira-backend/
 2. Execute `mvn clean install` para baixar as dependências.
 3. Implemente os módulos conforme a necessidade.
 4. O deploy pode ser feito em um servidor Tomcat 7+.
+>>>>>>> 2775b39 (Commit inicial do portal-sira-backend com estrutura e funcionalidades)
