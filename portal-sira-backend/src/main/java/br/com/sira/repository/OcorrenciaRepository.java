@@ -54,4 +54,55 @@ public class OcorrenciaRepository {
             e.printStackTrace();
         }
     }
+
+    public Ocorrencia buscarPorId(Long id) {
+        String sql = "SELECT o.id, o.titulo, o.descricao, o.data_hora, u.id as usuario_id, u.username, u.nome FROM ocorrencia o JOIN usuario u ON o.usuario_id = u.id WHERE o.id = ?";
+        try (Connection conn = dataSource.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setLong(1, id);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    Ocorrencia o = new Ocorrencia();
+                    o.setId(rs.getLong("id"));
+                    o.setTitulo(rs.getString("titulo"));
+                    o.setDescricao(rs.getString("descricao"));
+                    o.setDataHora(rs.getTimestamp("data_hora").toLocalDateTime());
+                    Usuario u = new Usuario();
+                    u.setId(rs.getLong("usuario_id"));
+                    u.setUsername(rs.getString("username"));
+                    u.setNome(rs.getString("nome"));
+                    o.setUsuario(u);
+                    return o;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public void atualizar(Ocorrencia ocorrencia) {
+        String sql = "UPDATE ocorrencia SET titulo = ?, descricao = ?, data_hora = ? WHERE id = ?";
+        try (Connection conn = dataSource.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, ocorrencia.getTitulo());
+            ps.setString(2, ocorrencia.getDescricao());
+            ps.setTimestamp(3, java.sql.Timestamp.valueOf(ocorrencia.getDataHora()));
+            ps.setLong(4, ocorrencia.getId());
+            ps.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void excluir(Long id) {
+        String sql = "DELETE FROM ocorrencia WHERE id = ?";
+        try (Connection conn = dataSource.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setLong(1, id);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 } 

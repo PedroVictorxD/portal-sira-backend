@@ -20,4 +20,16 @@ public class OcorrenciaService {
     public void inserir(Ocorrencia ocorrencia) {
         ocorrenciaRepository.inserir(ocorrencia);
     }
+
+    public Ocorrencia buscarPorId(Long id) {
+        return ocorrenciaRepository.buscarPorId(id);
+    }
+
+    public void atualizar(Ocorrencia ocorrencia) {
+        ocorrenciaRepository.atualizar(ocorrencia);
+    }
+
+    public void excluir(Long id) {
+        ocorrenciaRepository.excluir(id);
+    }
 } 

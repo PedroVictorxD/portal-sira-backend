@@ -2,6 +2,7 @@
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/service/ChamadoService.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/service/OcorrenciaService.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/service/ComentarioOcorrenciaService.java
+/home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/controller/OcorrenciaController.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/controller/ChamadoController.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/repository/OcorrenciaRepository.java
 /home/pedro/portal-sira/portal-sira-backend/src/main/java/br/com/sira/repository/UsuarioRepository.java
