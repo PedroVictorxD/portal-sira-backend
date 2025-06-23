@@ -1,0 +1,13 @@
+br/com/sira/controller/ChamadoController.class
+br/com/sira/service/FTPService.class
+br/com/sira/service/ChamadoService.class
+br/com/sira/service/OcorrenciaService.class
+br/com/sira/repository/ChamadoRepository.class
+br/com/sira/controller/LoginController.class
+br/com/sira/model/Ocorrencia.class
+br/com/sira/model/Chamado.class
+br/com/sira/repository/OcorrenciaRepository.class
+br/com/sira/model/Usuario.class
+br/com/sira/service/UsuarioService.class
+br/com/sira/controller/LogoutController.class
+br/com/sira/repository/UsuarioRepository.class
